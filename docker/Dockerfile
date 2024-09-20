@@ -50,7 +50,6 @@ ENV PATH="/opt/besu/bin:${OLDPATH}"
 # Suppressing this warning as there's no risk here because the root user
 # only sets permissions and does not continue running the main process.
 # hadolint ignore=DL3002
-USER root
 RUN chmod +x /opt/besu/bin/besu-entry.sh
 
 ENV BESU_USER_NAME=${BESU_USER}
